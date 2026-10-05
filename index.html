@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael's PC Clinic</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide Icons for Service Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">Michael's PC Clinic</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#hours">Hours</a>
+      <a href="#book">Book a Repair</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- Our Services Section -->
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        
+        <div class="service-card">
+          <div class="icon-wrapper">
+            <i data-lucide="laptop"></i>
+          </div>
+          <h3>Laptop Repair</h3>
+          <p class="price">₱1,500</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon-wrapper">
+            <i data-lucide="smartphone"></i>
+          </div>
+          <h3>Phone Screen Repair</h3>
+          <p class="price">₱2,200</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon-wrapper">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <h3>Virus Removal</h3>
+          <p class="price">₱800</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Opening Hours Section -->
+    <section id="hours" class="section">
+      <h2>Opening Hours</h2>
+      <table class="hours-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday to Friday</td>
+            <td>9:00 AM to 6:00 PM</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>10:00 AM to 4:00 PM</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>Closed</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Book a Repair Section -->
+    <section id="book" class="section">
+      <h2>Book a Repair</h2>
+      <p class="subtext">Fields marked * are required.</p>
+
+      <form class="booking-form">
+        <div class="form-group inline-group">
+          <label for="fullname">Full name *</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="form-group inline-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <fieldset class="form-group fieldset-group">
+          <legend>Device type</legend>
+          <div class="radio-options">
+            <label><input type="radio" name="device" value="laptop"> Laptop</label>
+            <label><input type="radio" name="device" value="phone"> Phone</label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Send request</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Michael's PC Clinic, Manila</p>
+  </footer>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
