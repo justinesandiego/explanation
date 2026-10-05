@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header / Navigation */
+.navbar {
+  background-color: #181818;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navbar nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 0.9rem;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  flex: 1;
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+/* Services Section */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 24px 20px;
+  border-left: 4px solid #0f6c42;
+  position: relative;
+}
+
+.icon-wrapper {
+  background-color: #e1f3e8;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #0f6c42;
+}
+
+.service-card h3 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.service-card .price {
+  color: #0f6c42;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* Opening Hours Table */
+.hours-table {
+  border-collapse: collapse;
+  width: 360px;
+  max-width: 100%;
+  font-size: 0.9rem;
+  border: 1px solid #e0e0e0;
+}
+
+.hours-table th,
+.hours-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+.hours-table th {
+  background-color: #e2f0e8;
+  font-weight: bold;
+  color: #222;
+}
+
+.hours-table td:last-child {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Booking Form Section */
+.subtext {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 420px;
+}
+
+.inline-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inline-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  min-width: 80px;
+}
+
+.inline-group input {
+  padding: 6px 8px;
+  border: 1px solid #b0b0b0;
+  border-radius: 3px;
+  outline: none;
+  width: 180px;
+}
+
+.inline-group input:focus {
+  border-color: #0f6c42;
+}
+
+.fieldset-group {
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.fieldset-group legend {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0f6c42;
+  padding: 0 4px;
+}
+
+.radio-options {
+  display: flex;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.radio-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #0f6c42;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.submit-btn:hover {
+  background-color: #0b5232;
+}
+
+/* Footer */
+.footer {
+  background-color: #181818;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+  font-size: 0.8rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
